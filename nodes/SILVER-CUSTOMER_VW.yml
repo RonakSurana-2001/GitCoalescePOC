@@ -1,0 +1,78 @@
+fileVersion: 1
+id: ebca9b48-12b0-4536-9e4e-466767c0c145
+name: CUSTOMER_VW
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: Customer data as defined by TPC-H
+  isMultisource: false
+  locationName: SILVER
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb04d8bd-e432-484a-a538-ea7af46ba66f
+          stepCounter: ebca9b48-12b0-4536-9e4e-466767c0c145
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CUSTOMER_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f82089f2-7674-416e-8cdc-a72ab4932b3f
+                stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7403c4c0-a33c-4a2a-8259-c88de65afb79
+          stepCounter: ebca9b48-12b0-4536-9e4e-466767c0c145
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: CUSTOMER_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbe38930-b2ca-4508-b830-5da138f8da3a
+                stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83723dce-a45d-406d-9aa5-29c9e598c09d
+          stepCounter: ebca9b48-12b0-4536-9e4e-466767c0c145
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: CUSTOMER_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89beaf06-7ae6-4d52-82d7-483da9e28fb1
+                stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: BRONZE
+            nodeName: CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('BRONZE', 'CUSTOMER') }} "CUSTOMER"
+        name: CUSTOMER_VW
+        noLinkRefs: []
+  name: CUSTOMER_VW
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
