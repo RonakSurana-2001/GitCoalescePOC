@@ -2,3 +2,4 @@ defaultStorageMapping: BRONZE
 fileVersion: 1
 locations:
   - BRONZE
+  - SILVER
