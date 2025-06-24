@@ -56,6 +56,26 @@ operation:
               - columnCounter: 89beaf06-7ae6-4d52-82d7-483da9e28fb1
                 stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0f5b2eb-d590-4ae5-9a90-6dc5bd8a27a5
+          stepCounter: ebca9b48-12b0-4536-9e4e-466767c0c145
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMER_PHONE_NO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 519069f4-be61-4bd2-a4a8-56080a595c5d
+                stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
