@@ -68,11 +68,11 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: CUSTOMER_NATION
+        name: CUSTOMER_PHONE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 26cebbfe-1c56-408a-b80b-c5bb5269fdbb
+              - columnCounter: 519069f4-be61-4bd2-a4a8-56080a595c5d
                 stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
             transform: ""
         systemColumnType: None
