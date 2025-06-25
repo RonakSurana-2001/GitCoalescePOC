@@ -82,6 +82,7 @@ operation:
         appliedColumnTests: {}
         columnReference:
           columnCounter: 865a1bdb-c69c-441b-9c4d-559de761b57b
+          columnCounter: c28a9fa0-8769-4358-bedc-82d859d8b897
           stepCounter: ebca9b48-12b0-4536-9e4e-466767c0c145
         config: {}
         dataType: ""
@@ -93,6 +94,11 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 7ed84438-eee9-43de-8e66-542225f14b7e
+        name: CUSTOMER_NATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26cebbfe-1c56-408a-b80b-c5bb5269fdbb
                 stepCounter: 19b798aa-3ac9-44a5-9354-478f01261116
             transform: ""
         systemColumnType: None
